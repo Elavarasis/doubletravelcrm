@@ -28,6 +28,8 @@ class ContactController extends Controller {
 	{
 		$this->middleware('auth');
 		
+			
+		
 	}
 
 	/**
@@ -37,16 +39,7 @@ class ContactController extends Controller {
 	 */
 	public function index()
 	{	
-		$reg = Leka::find('amma');
-		$reg1 = DB::table('leka')->select('id')->where('name', 'rajanraju1')->first();
-		if($reg1){}else{
-			DB::table('leka')->insertGetId(
-					['name' => 'rajanraju1']
-				);
-		}
-		 //$data = Leka::all();
-		echo "<pre>";
-        var_dump($reg1 ); echo "</pre>";exit;
+		
 		$contacts = Contact::all();
 		return view('contact/contact_listing')->with('contacts', $contacts);
 	}

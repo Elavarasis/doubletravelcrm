@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Laravel</title>
+		<title>Laravel.........</title>
 		
 		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
@@ -37,7 +37,7 @@
 			}
 		</style>
 	</head>
-	<body><a href="{{ url('/home') }}">Home</a>
+	<body><a href="{{ url('/home') }}">Home..</a>
 		<div class="container">
 			<div class="content">
 				<div class="title">Laravel 5</div>

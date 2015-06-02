@@ -11,7 +11,23 @@
 |
 */
 
+
+
 Route::get('/', 'WelcomeController@index');
+
+Route::get('home', 'HomeController@index');
+Route::get('aboutus', 'AboutusController@index');
+
+
+Route::get('admin', 'AdminController@index');
+/* 
+ start route for Admin 
+ Route::get('home', function(){
+	return Redirect::to('admin');
+});
+Route::get('/', function(){
+	return Redirect::to('admin');
+}); End route for Admin */
 
 Route::get('home', 'HomeController@index');
 Route::get('contacts', 'ContactController@index');
